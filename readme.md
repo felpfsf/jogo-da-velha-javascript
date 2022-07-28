@@ -4,6 +4,9 @@
 <!-- 
  <img src="https://raw.githubusercontent.com/felpfsf/mission-space-explorers/master/design/banner.png" style="border-top-left-radius: 10px; border-top-right-radius: 10px"> -->
  
+ ![image](https://user-images.githubusercontent.com/2619027/181653382-986d957b-56b9-4566-b419-13e8cfef056a.png)
+
+ 
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/felpfsf/mission-space-explorers) ![GitHub language count](https://img.shields.io/github/languages/count/felpfsf/mission-space-explorers) ![GitHub top language](https://img.shields.io/github/languages/top/felpfsf/mission-space-explorers)
 
