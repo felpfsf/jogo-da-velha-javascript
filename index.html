@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- scripts -->
+    <script defer src="js/main.js"></script>
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <h1 class="game-title">Jogo da Velha</h1>
+      <!-- Selecionar jogadores -->
+      <div id="players-select" class="players-box">
+        <button id="multiplayer">2 jogadores</button>
+        <button id="aiPlayer">Jogue contra a IA</button>
+      </div>
+      <!-- Grid da velha -->
+      <div id="game-grid" class="game-grid hidden">
+        <div id="block-1" class="box"></div>
+        <div id="block-2" class="box"></div>
+        <div id="block-3" class="box"></div>
+        
+        <div id="block-4" class="box"></div>
+        <div id="block-5" class="box"></div>
+        <div id="block-6" class="box"></div>
+
+        <div id="block-7" class="box"></div>
+        <div id="block-8" class="box"></div>
+        <div id="block-9" class="box"></div>
+      </div>
+      <!-- Scoreboard -->
+      <div id="scoreboard" class="scoreboard-box">
+        <!-- Scoreboard Player #1 -->
+        <span class="score-box">
+          <span id="p1-scoreboard">Player #1</span>
+          <span id="p1-points">0</span>
+        </span>
+        <!-- Scoreboard Player #2 -->
+        <span class="score-box">
+          <span id="p2-scoreboard">Player #2</span>
+          <span id="p2-points">0</span>
+        </span>
+      </div>
+      <!-- Utils -->
+      <!-- Ícones -->
+      <div class="hidden">
+        <div class="marker x">X</div>
+        <div class="marker o">O</div>
+      </div>
+      <!-- Modal de mensagens -->
+      <div id="modal" class="hidden">
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

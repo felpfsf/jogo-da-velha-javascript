@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mochiy Pop One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fef6e4;
+  color: #001858;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.game-wrapper {
+  width: 750px;
+  height: auto;
+
+  /* border: 1px solid red; */
+
+  /* margin-top: 60px; */
+  margin-inline: auto;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 40px;
+}
+
+.players-box {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.players-box button {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 22px;
+  color: #001858;
+
+  background-color: #f3d2c1;
+
+  width: 250px;
+
+  border: none;
+  border-radius: 10px;
+  padding: 24px 12px;
+
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.players-box button:hover {
+  background-color: #8bd3dd;
+}
+
+.game-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.box {
+  font-size: 64px;
+
+  width: 120px;
+  height: 120px;
+
+  border: 3px solid #001858;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+
+/* Scoreboard */
+
+.scoreboard-box {
+  /* width: 180px; */
+  padding: 16px;
+  margin-top: 32px;
+  /* border: solid; */
+
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.score-box {
+  font-size: 24px;
+  color: #172c66;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#p1-points {
+  color: forestgreen;
+}
+
+#p2-points {
+  color: crimson;
+}
+
+/* Markers */
+
+.marker {
+  font-size: 64px;
+  display: inline-block;
+}
+
+.x {
+  color: crimson;
+}
+
+.o {
+  color: forestgreen;
+}
+
+/* Modal */
+
+#modal p {
+  position: absolute;
+
+  top: 340px;
+  left: 0;
+  right: 0;
+
+  margin-inline: auto;
+
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+
+  background-color: black;
+
+  width: 500px;
+  padding: 18px;
+}
+
+/* Media */
+
+@media screen and (max-width: 450px) {
+  .game-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    padding: 16px;
+  }
+
+  .players-box {
+    width: 90%;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .players-box button {
+    font-size: 16px;
+    width: 180px;
+    padding: 10px 12px;
+  }
+
+  .score-box {
+    font-size: 20px;
+  }
+
+  #modal p {
+    width: 90%;
+    top: 290px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+  .game-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    padding: 16px;
+  }
+
+  .players-box {
+    width: 90%;
+  }
+
+  .players-box button {
+    font-size: 18px;
+  }
+
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .score-box {
+    font-size: 24px;
+  }
+
+  #modal p {
+    width: 90%;
+    top: 320px;
+    font-size: 48px;
+  }
+}
